@@ -4,3 +4,23 @@
     --sky-white: #f8f8f8;
     --sky-red: #dc5957;
 }
+
+@font-face {
+    font-family: skyfontr;
+    src: url(../fonts/gotham/Gotham-Light.otf);
+}
+  
+  @font-face {
+    font-family: skyheaderfont;
+    src: url(../fonts/crimson/Crimson-Bold.otf);
+  }
+
+  body {
+    font-family: skyfontr !important;
+    background-color: white;
+    align-content: center;
+  }
+
+  h2 {
+    font-family: skyheaderfont !important;
+ }
