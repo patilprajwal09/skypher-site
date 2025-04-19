@@ -24,3 +24,65 @@
   h2 {
     font-family: skyheaderfont !important;
  }
+
+ .sky-bg-primary{
+  background-color: var(--sky-primary);
+ }
+
+ .sky-bg-secondary{
+  background-color: var(--sky-secondary);
+ }
+
+ .sky-bg-white{
+  background-color: var(--sky-white);
+ }
+
+ .sky-bg-red{
+  background-color: var(--sky-red);
+ }
+
+ .sky-text-primary{
+  color: var(--sky-primary);
+ }
+
+ .stats-section{
+  min-height: 250px;
+ }
+
+ /* image css */
+
+/* Container for the image */
+.image-container {
+  position: relative;
+  overflow: hidden; /* Ensures the image doesn't overflow the container */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Image styles */
+.zoom-image {
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and crop to fit */
+  transition: transform 0.5s ease; /* Smooth zoom transition */
+}
+
+/* Hover effect */
+.image-container:hover .zoom-image {
+  transform: scale(1.1); /* Zoom the image by 20% */
+}
+
+
+/* slider img css */
+
+.slider-img-item{
+  max-height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.hidden {
+  opacity: 0; /* Make it invisible */
+  visibility: hidden; /* Prevent interaction */
+  transition: opacity 0.3s ease-out;
+}
