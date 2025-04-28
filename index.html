@@ -4,91 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skypher Landmarks | Crafting Iconic Skylines</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --navy: #1F2E4E;
-            --coral: #D95C4B;
-            --cream: #EFE8D8;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-        
-        .navy-bg {
-            background-color: var(--navy);
-        }
-        
-        .coral-bg {
-            background-color: var(--coral);
-        }
-        
-        .cream-bg {
-            background-color: var(--cream);
-        }
-        
-        .navy-text {
-            color: var(--navy);
-        }
-        
-        .coral-text {
-            color: var(--coral);
-        }
-        
-        .cream-text {
-            color: var(--cream);
-        }
-        
-        .hero {
-            background: linear-gradient(to right, white 50%, rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .amenity-icon {
-            transition: all 0.3s ease;
-        }
-        
-        .amenity-icon:hover {
-            transform: scale(1.1);
-        }
-        
-        .fade-in {
-            opacity: 0;
-            transition: opacity 0.6s ease-in;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-        }
+    <link rel="stylesheet" href="assets/css/sky.css"> 
 
-        .hero-slide {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        z-index: 0;
-        }
-        .hero-slide.active {
-        opacity: 1;
-        z-index: 1;
-        }
-
-        .nav-link.active {
-        border-bottom: 2px solid var(--coral);
-        color: var(--coral);
-        }
-
-
-    </style>
 </head>
 <body class="text-gray-800">
     <!-- Navigation -->
@@ -477,70 +398,15 @@
             </div>
             
             <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 Skypher Landmarks. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> Skypher Landmarks. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        // Mobile menu toggle
-        const toggleButton = document.querySelector('button.md\\:hidden');
-        const mobileMenu = document.querySelector('#mobilemenu');
-
-        toggleButton.addEventListener('click', function () {
-          if (mobileMenu) {
-            mobileMenu.classList.toggle('hidden');
-          }
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    const mobileMenu = document.querySelector('.md\\:hidden.hidden');
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
-            });
-        });
-
-        // Scroll animation
-        const fadeElements = document.querySelectorAll('.fade-in');
-        
-        const fadeInOnScroll = function() {
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if (elementTop < windowHeight - 100) {
-                    element.classList.add('visible');
-                }
-            });
-        };
-        
-        // Check on initial load
-        window.addEventListener('load', fadeInOnScroll);
-        
-        // Check on scroll
-        window.addEventListener('scroll', fadeInOnScroll);
-
-        
-    </script>
+  
 
 <script>
+    // 
   const slides = document.querySelectorAll('.hero-slide');
   let current = 0;
 
@@ -658,16 +524,8 @@
     containerOngoing.appendChild(card);
   });
 </script>
-<script>
-    // Add active class on nav link click
-    const navLinks = document.querySelectorAll('.nav-link');
-  
-    navLinks.forEach(link => {
-      link.addEventListener('click', function () {
-        navLinks.forEach(nav => nav.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-  </script>
+
+<script src="assets/js/sky.js"></script>
+
   </body>
 </html>
