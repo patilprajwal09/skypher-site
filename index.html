@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skypher Landmarks | Crafting Iconic Skylines</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skypher Landmarks | Crafting Iconic Skylines</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <style>
         :root {
             --navy: #1F2E4E;
             --coral: #D95C4B;
@@ -88,398 +92,532 @@
 
 
     </style>
-</head>
-<body class="text-gray-800">
-    <!-- Navigation -->
-    <nav class="navy-bg text-white sticky top-0 z-50 shadow-lg">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <a href="#"><img src="assets/images/skypher logo white.png" class="w-24 h-auto object-cover" alt=""></a>
-                </div>
-                
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="hover:text-gray-300 transition nav-link">Home</a>
-                    <a href="#about" class="hover:text-gray-300 transition nav-link">About</a>
-                    <a href="#projects" class="hover:text-gray-300 transition nav-link">Projects</a>
-                    <a href="#ongoing-projects" class="hover:text-gray-300 transition nav-link">Ongoing Projects</a>
-                    <a href="#testimonials" class="hover:text-gray-300 transition nav-link">Testimonials</a>
-                    <a href="#contact" class="hover:text-gray-300 transition nav-link">Contact</a>
-                </div>
-                
-                <button class="md:hidden focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-            
-            <!-- Mobile menu -->
-            <div class="md:hidden hidden mt-4" id="mobilemenu">
-                <a href="#home" class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Home</a>
-                <a href="#about" class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">About</a>
-                <a href="#projects" class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Projects</a>
-                <a href="#ongoing-projects" class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Ongoing Projects</a>
-                <a href="#testimonials" class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Testimonials</a>
-                <a href="#contact" class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <!-- Hero Slider Section -->
-<section id="home" class="relative h-screen overflow-hidden">
-  <!-- Slides -->
-  <div id="heroSlides" class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out">
-    <div class="absolute inset-0 bg-cover bg-center hero-slide active" style="background-image: url('assets/images/home1.jpg');"></div>
-    <div class="absolute inset-0 bg-cover bg-center hero-slide" style="background-image: url('assets/images/home2.jpg');"></div>
-    <div class="absolute inset-0 bg-cover bg-center hero-slide" style="background-image: url('assets/images/home3.jpg');"></div>
-  </div>
-
-  <!-- Content -->
-  <div class="relative z-10 flex items-center justify-center h-full bg-white/50 backdrop-blur-sm">
-    <div class="text-center px-6">
-      <h1 class="text-5xl md:text-6xl font-bold navy-text mb-6 fade-in">Crafting Iconic Skylines</h1>
-      <p class="text-xl text-gray-600 mb-8 fade-in">Delivering excellence in real estate for over 20 years</p>
-      <a href="tel:+918080653068" class="coral-bg text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition transform hover:scale-105 fade-in">
-        Call Now
-      </a>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <div class="absolute bottom-6 left-0 right-0 flex justify-center z-20 space-x-4">
-    <button onclick="prevSlide()" class="bg-white/70 hover:bg-white text-navy px-3 py-1 rounded-full"><i class="fas fa-chevron-left"></i></button>
-    <button onclick="nextSlide()" class="bg-white/70 hover:bg-white text-navy px-3 py-1 rounded-full"><i class="fas fa-chevron-right"></i></button>
-  </div>
-</section>
-
-
-    <!-- About Section -->
-    <section id="about" class="py-20 fade-in">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold navy-text text-center mb-16">Who We Are</h2>
-            
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Skypher Office" class="rounded-lg shadow-xl w-full">
-                </div>
-                
-                <div class="md:w-1/2">
-                    <p class="text-gray-600 mb-8">
-                        Skypher Landmarks is a premier real estate developer with a legacy of creating landmark properties 
-                        that redefine urban living. Our commitment to quality, innovation, and customer satisfaction has 
-                        made us a trusted name in the industry.
-                    </p>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="coral-text mr-4 mt-1">
-                                <i class="fas fa-check-circle text-2xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg navy-text">On-Time Delivery</h3>
-                                <p class="text-gray-600">We pride ourselves on delivering projects on schedule, every time.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="coral-text mr-4 mt-1">
-                                <i class="fas fa-check-circle text-2xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg navy-text">Premium Quality Materials</h3>
-                                <p class="text-gray-600">Only the finest materials make it into our constructions.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="coral-text mr-4 mt-1">
-                                <i class="fas fa-check-circle text-2xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg navy-text">Customer-Centric Approach</h3>
-                                <p class="text-gray-600">Your satisfaction is our top priority at every step.</p>
-                            </div>
-                        </div>
+    </head>
+    <body class="text-gray-800">
+        <!-- Navigation -->
+        <nav class="navy-bg text-white sticky top-0 z-50 shadow-lg">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <a href="#"><img
+                                src="assets/images/skypher logo white.png"
+                                class="w-24 h-auto object-cover" alt></a>
                     </div>
+
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#home"
+                            class="hover:text-gray-300 transition nav-link">Home</a>
+                        <a href="#about"
+                            class="hover:text-gray-300 transition nav-link">About</a>
+                        <a href="#projects"
+                            class="hover:text-gray-300 transition nav-link">Projects</a>
+                        <a href="#ongoing-projects"
+                            class="hover:text-gray-300 transition nav-link">Ongoing
+                            Projects</a>
+                        <a href="#testimonials"
+                            class="hover:text-gray-300 transition nav-link">Testimonials</a>
+                        <a href="#contact"
+                            class="hover:text-gray-300 transition nav-link">Contact</a>
+                    </div>
+
+                    <button class="md:hidden focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile menu -->
+                <div class="md:hidden hidden mt-4" id="mobilemenu">
+                    <a href="#home"
+                        class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Home</a>
+                    <a href="#about"
+                        class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">About</a>
+                    <a href="#projects"
+                        class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Projects</a>
+                    <a href="#ongoing-projects"
+                        class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Ongoing
+                        Projects</a>
+                    <a href="#testimonials"
+                        class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Testimonials</a>
+                    <a href="#contact"
+                        class="block py-2 hover:bg-gray-700 px-2 rounded nav-link">Contact</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 cream-bg fade-in">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold navy-text text-center mb-4">Our Projects</h2>
-            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Discover our portfolio of landmark developments that combine luxury, comfort, and innovation.</p>
-            
-            <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <!-- Hero Section -->
+        <!-- Hero Slider Section -->
+        <section id="home" class="relative h-screen overflow-hidden">
+            <!-- Slides -->
+            <div id="heroSlides"
+                class="absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out">
+                <div
+                    class="absolute inset-0 bg-cover bg-center hero-slide active"
+                    style="background-image: url('assets/images/home1.jpg');"></div>
+                <div class="absolute inset-0 bg-cover bg-center hero-slide"
+                    style="background-image: url('assets/images/home2.jpg');"></div>
+                <div class="absolute inset-0 bg-cover bg-center hero-slide"
+                    style="background-image: url('assets/images/home3.jpg');"></div>
+            </div>
 
-            
-            
-        </div>
-    </section>
-    
-
-    <!-- Amenities Section -->
-    <section id="amenities" class="py-20 fade-in">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold navy-text text-center mb-4">Premium Amenities</h2>
-            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Experience unparalleled comfort with our thoughtfully designed amenities</p>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Amenity 1 -->
-                <div class="text-center amenity-icon">
-                    <div class="coral-bg text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield-alt text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold navy-text mb-2">24/7 Security</h3>
-                    <p class="text-gray-600">Round-the-clock surveillance and trained security personnel for complete peace of mind.</p>
-                </div>
-                
-                <!-- Amenity 2 -->
-                <div class="text-center amenity-icon">
-                    <div class="coral-bg text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-swimming-pool text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold navy-text mb-2">Clubhouse</h3>
-                    <p class="text-gray-600">Luxurious clubhouse with swimming pool, gym, and recreational facilities.</p>
-                </div>
-                
-                <!-- Amenity 3 -->
-                <div class="text-center amenity-icon">
-                    <div class="coral-bg text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-tree text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold navy-text mb-2">Green Spaces</h3>
-                    <p class="text-gray-600">Beautifully landscaped gardens and parks for relaxation and leisure.</p>
-                </div>
-                
-                <!-- Amenity 4 -->
-                <div class="text-center amenity-icon">
-                    <div class="coral-bg text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-gem text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold navy-text mb-2">Gated Community</h3>
-                    <p class="text-gray-600">Exclusive gated entry with controlled access for enhanced privacy and security.</p>
+            <!-- Content -->
+            <div
+                class="relative z-10 flex items-center justify-center h-full bg-white/50 backdrop-blur-sm">
+                <div class="text-center px-6">
+                    <h1
+                        class="text-5xl md:text-6xl font-bold navy-text mb-6 fade-in">Crafting
+                        Iconic Skylines</h1>
+                    <p class="text-xl text-gray-600 mb-8 fade-in">Delivering
+                        excellence in real estate for over 20 years</p>
+                    <a href="tel:+918080653068"
+                        class="coral-bg text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition transform hover:scale-105 fade-in">
+                        Call Now
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!--ongoing Projects Section -->
-    <section id="ongoing-projects" class="py-20 cream-bg fade-in">
-      <div class="container mx-auto px-6">
-          <h2 class="text-3xl md:text-4xl font-bold navy-text text-center mb-4">Our Ongoing Projects</h2>
-          <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Discover our portfolio of landmark developments that combine luxury, comfort, and innovation.</p>
-          
-          <div id="ongoing-projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
-
-          
-          
-      </div>
-  </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-20 fade-in" id="testimonials">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold navy-text text-center mb-4">What Our Clients Say</h2>
-            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Hear from our satisfied homeowners about their Skypher experience</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-6">
-                        <img src="assets/images/1.jpg" alt="Sarah Johnson" class="w-16 h-16 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-semibold navy-text">Siddhi Patil</h4>
-                            <p class="text-sm text-gray-500">Parinita Apartment Resident</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "The quality of construction and attention to detail in our Skypher home is exceptional. The team was professional throughout the entire process."
-                    </p>
-                    <div class="mt-4 coral-text">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-6">
-                        <img src="assets/images/2.jpg" alt="Michael Chen" class="w-16 h-16 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-semibold navy-text">Rajesh Godbole</h4>
-                            <p class="text-sm text-gray-500">Sarthak Towers Resident</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "Living in a Skypher property has been a dream. The amenities are top-notch and the community is wonderful. Highly recommend!"
-                    </p>
-                    <div class="mt-4 coral-text">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-6">
-                        <img src="assets/images/3.jpg" alt="Priya Patel" class="w-16 h-16 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-semibold navy-text">Amol Kasbekar</h4>
-                            <p class="text-sm text-gray-500">Yogini Apartment Resident</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "From the initial purchase to after-sales service, Skypher has exceeded our expectations. The waterfront location is simply breathtaking."
-                    </p>
-                    <div class="mt-4 coral-text">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
+            <!-- Controls -->
+            <div
+                class="absolute bottom-6 left-0 right-0 flex justify-center z-20 space-x-4">
+                <button onclick="prevSlide()"
+                    class="bg-white/70 hover:bg-white text-navy px-3 py-1 rounded-full"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button onclick="nextSlide()"
+                    class="bg-white/70 hover:bg-white text-navy px-3 py-1 rounded-full"><i
+                        class="fas fa-chevron-right"></i></button>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 navy-bg text-white fade-in">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get In Touch</h2>
-            <p class="text-center text-gray-300 mb-16 max-w-2xl mx-auto">Have questions about our projects or ready to invest in your dream home? Contact us today.</p>
-            
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div class="lg:w-1/2">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7567.476673521168!2d73.82464809207039!3d18.495507930372586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfefc4b366c1%3A0x323d964f9dc472e7!2sNavasahyadri%20Society%2C%20Ganesh%20Nagar%2C%20Karvenagar%2C%20Pune%2C%20Maharashtra%20411052!5e0!3m2!1sen!2sin!4v1745585783112!5m2!1sen!2sin"
-                   width="100%" height="100%" style="border:0; border-radius:30px;" 
-                  allowfullscreen="" loading="lazy" 
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                
-                <div class="lg:w-1/2">
-                    <div class="bg-gray-800 p-8 rounded-lg h-full">
-                        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
-                        
+        <!-- About Section -->
+        <section id="about" class="py-20 fade-in">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold navy-text text-center mb-16">Who
+                    We Are</h2>
+
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                        <img src="assets/images/Who-We-Are.jpg"
+                            alt="Skypher Office"
+                            class="rounded-lg shadow-xl w-full">
+                    </div>
+
+                    <div class="md:w-1/2">
+                        <p class="text-gray-600 mb-8">
+                            Skypher Landmarks is a premier real estate developer
+                            with a legacy of creating landmark properties
+                            that redefine urban living. Our commitment to
+                            quality, innovation, and customer satisfaction has
+                            made us a trusted name in the industry.
+                        </p>
+
                         <div class="space-y-6">
                             <div class="flex items-start">
                                 <div class="coral-text mr-4 mt-1">
-                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                    <i class="fas fa-check-circle text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium">Corporate Office</h4>
-                                    <p class="text-gray-300">44/58 Ruturaj Bunglow,<br> Navasahyadri Society Karvenagar Pune City,<br> Pune Maharashtra 411052.</p>
+                                    <h3
+                                        class="font-semibold text-lg navy-text">On-Time
+                                        Delivery</h3>
+                                    <p class="text-gray-600">We pride ourselves
+                                        on delivering projects on schedule,
+                                        every time.</p>
                                 </div>
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="coral-text mr-4 mt-1">
-                                    <i class="fas fa-phone-alt text-xl"></i>
+                                    <i class="fas fa-check-circle text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium">Phone</h4>
-                                    <p class="text-gray-300">+91 80806 53068</p>
+                                    <h3
+                                        class="font-semibold text-lg navy-text">Premium
+                                        Quality Materials</h3>
+                                    <p class="text-gray-600">Only the finest
+                                        materials make it into our
+                                        constructions.</p>
                                 </div>
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="coral-text mr-4 mt-1">
-                                    <i class="fas fa-envelope text-xl"></i>
+                                    <i class="fas fa-check-circle text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium">Email</h4>
-                                    <p class="text-gray-300">info@skypherlandmarks.com<br>sales@skypherlandmarks.com</p>
+                                    <h3
+                                        class="font-semibold text-lg navy-text">Customer-Centric
+                                        Approach</h3>
+                                    <p class="text-gray-600">Your satisfaction
+                                        is our top priority at every step.</p>
                                 </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="coral-text mr-4 mt-1">
-                                    <i class="fas fa-clock text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium">Working Hours</h4>
-                                    <p class="text-gray-300">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8">
-                            <h4 class="font-medium mb-4">Follow Us</h4>
-                            <div class="flex space-x-4">
-                                <a href="#" class="coral-text hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
-                                <a href="#" class="coral-text hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/skypherlandmarks?igsh=MW16cW9tMzF6dHg0Yw==" class="coral-text hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="coral-text hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="navy-bg text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <a href="#"><img src="assets/images/skypher logo white.png" class="w-48 h-auto object-cover" alt="skypher"></a>
-                    <p class="mt-4 text-gray-300">
-                        Crafting iconic skylines with excellence and innovation since 2003.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-300 hover:text-white transition">Home</a></li>
-                        <li><a href="#about" class="text-gray-300 hover:text-white transition">About Us</a></li>
-                        <li><a href="#projects" class="text-gray-300 hover:text-white transition">Projects</a></li>
-                        <li><a href="#amenities" class="text-gray-300 hover:text-white transition">Amenities</a></li>
-                        <li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Terms of Service</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Cookie Policy</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
-                    <p class="text-gray-300 mb-4">
-                        Subscribe to our newsletter for the latest updates and offers.
-                    </p>
-                    <div class="flex">
-                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l text-gray-800 w-full focus:outline-none">
-                        <button class="coral-bg px-4 rounded-r">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 cream-bg fade-in">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold navy-text text-center mb-4">Our
+                    Projects</h2>
+                <p
+                    class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Discover
+                    our portfolio of landmark developments that combine luxury,
+                    comfort, and innovation.</p>
+
+                <div id="projectsGrid"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="py-20 fade-in">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold navy-text text-center mb-4">Premium
+                    Amenities</h2>
+                <p
+                    class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Experience
+                    unparalleled comfort with our thoughtfully designed
+                    amenities</p>
+
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Amenity 1 -->
+                    <div class="text-center amenity-icon">
+                        <div
+                            class="coral-bg text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-alt text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text mb-2">24/7
+                            Security</h3>
+                        <p class="text-gray-600">Round-the-clock surveillance
+                            and trained security personnel for complete peace of
+                            mind.</p>
+                    </div>
+
+                    <!-- Amenity 2 -->
+                    <div class="text-center amenity-icon">
+                        <div
+                            class="coral-bg text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-swimming-pool text-3xl"></i>
+                        </div>
+                        <h3
+                            class="text-xl font-semibold navy-text mb-2">Clubhouse</h3>
+                        <p class="text-gray-600">Luxurious clubhouse with
+                            swimming pool, gym, and recreational facilities.</p>
+                    </div>
+
+                    <!-- Amenity 3 -->
+                    <div class="text-center amenity-icon">
+                        <div
+                            class="coral-bg text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-tree text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text mb-2">Green
+                            Spaces</h3>
+                        <p class="text-gray-600">Beautifully landscaped gardens
+                            and parks for relaxation and leisure.</p>
+                    </div>
+
+                    <!-- Amenity 4 -->
+                    <div class="text-center amenity-icon">
+                        <div
+                            class="coral-bg text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-gem text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold navy-text mb-2">Gated
+                            Community</h3>
+                        <p class="text-gray-600">Exclusive gated entry with
+                            controlled access for enhanced privacy and
+                            security.</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 Skypher Landmarks. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </section>
 
-    <script>
+        <!--ongoing Projects Section -->
+        <section id="ongoing-projects" class="py-20 cream-bg fade-in">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold navy-text text-center mb-4">Our
+                    Ongoing Projects</h2>
+                <p
+                    class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Discover
+                    our portfolio of landmark developments that combine luxury,
+                    comfort, and innovation.</p>
+
+                <div id="ongoing-projectsGrid"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 fade-in" id="testimonials">
+            <div class="container mx-auto px-6">
+                <h2
+                    class="text-3xl md:text-4xl font-bold navy-text text-center mb-4">What
+                    Our Clients Say</h2>
+                <p
+                    class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Hear
+                    from our satisfied homeowners about their Skypher
+                    experience</p>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <img src="assets/images/1.jpg" alt="Sarah Johnson"
+                                class="w-16 h-16 rounded-full object-cover">
+                            <div class="ml-4">
+                                <h4 class="font-semibold navy-text">Siddhi
+                                    Patil</h4>
+                                <p class="text-sm text-gray-500">Parinita
+                                    Apartment Resident</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "The quality of construction and attention to detail in our Skypher home is exceptional. The team was professional throughout the entire process."
+                        </p>
+                        <div class="mt-4 coral-text">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <img src="assets/images/2.jpg" alt="Michael Chen"
+                                class="w-16 h-16 rounded-full object-cover">
+                            <div class="ml-4">
+                                <h4 class="font-semibold navy-text">Rajesh
+                                    Godbole</h4>
+                                <p class="text-sm text-gray-500">Sarthak Towers
+                                    Resident</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Living in a Skypher property has been a dream. The amenities are top-notch and the community is wonderful. Highly recommend!"
+                        </p>
+                        <div class="mt-4 coral-text">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <img src="assets/images/3.jpg" alt="Priya Patel"
+                                class="w-16 h-16 rounded-full object-cover">
+                            <div class="ml-4">
+                                <h4 class="font-semibold navy-text">Amol
+                                    Kasbekar</h4>
+                                <p class="text-sm text-gray-500">Yogini
+                                    Apartment Resident</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "From the initial purchase to after-sales service, Skypher has exceeded our expectations. The waterfront location is simply breathtaking."
+                        </p>
+                        <div class="mt-4 coral-text">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 navy-bg text-white fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get
+                    In Touch</h2>
+                <p
+                    class="text-center text-gray-300 mb-16 max-w-2xl mx-auto">Have
+                    questions about our projects or ready to invest in your
+                    dream home? Contact us today.</p>
+
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/2">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7567.476673521168!2d73.82464809207039!3d18.495507930372586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfefc4b366c1%3A0x323d964f9dc472e7!2sNavasahyadri%20Society%2C%20Ganesh%20Nagar%2C%20Karvenagar%2C%20Pune%2C%20Maharashtra%20411052!5e0!3m2!1sen!2sin!4v1745585783112!5m2!1sen!2sin"
+                            width="100%" height="100%"
+                            style="border:0; border-radius:30px;"
+                            allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="lg:w-1/2">
+                        <div class="bg-gray-800 p-8 rounded-lg h-full">
+                            <h3 class="text-xl font-semibold mb-6">Contact
+                                Information</h3>
+
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="coral-text mr-4 mt-1">
+                                        <i
+                                            class="fas fa-map-marker-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Corporate
+                                            Office</h4>
+                                        <p class="text-gray-300">44/58 Ruturaj
+                                            Bunglow,<br> Navasahyadri Society
+                                            Karvenagar Pune City,<br> Pune
+                                            Maharashtra 411052.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="coral-text mr-4 mt-1">
+                                        <i class="fas fa-phone-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Phone</h4>
+                                        <p class="text-gray-300">+91 80806
+                                            53068</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="coral-text mr-4 mt-1">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Email</h4>
+                                        <p
+                                            class="text-gray-300">info@skypherlandmarks.com<br>sales@skypherlandmarks.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="coral-text mr-4 mt-1">
+                                        <i class="fas fa-clock text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Working
+                                            Hours</h4>
+                                        <p class="text-gray-300">Monday -
+                                            Friday: 9:00 AM - 6:00
+                                            PM<br>Saturday: 10:00 AM - 4:00
+                                            PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-8">
+                                <h4 class="font-medium mb-4">Follow Us</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#"
+                                        class="coral-text hover:text-white text-2xl"><i
+                                            class="fab fa-facebook"></i></a>
+                                    <a href="#"
+                                        class="coral-text hover:text-white text-2xl"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a
+                                        href="https://www.instagram.com/skypherlandmarks?igsh=MW16cW9tMzF6dHg0Yw=="
+                                        class="coral-text hover:text-white text-2xl"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a href="#"
+                                        class="coral-text hover:text-white text-2xl"><i
+                                            class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="navy-bg text-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <a href="#"><img
+                                src="assets/images/skypher logo white.png"
+                                class="w-48 h-auto object-cover"
+                                alt="skypher"></a>
+                        <p class="mt-4 text-gray-300">
+                            Crafting iconic skylines with excellence and
+                            innovation since 2003.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home"
+                                    class="text-gray-300 hover:text-white transition">Home</a></li>
+                            <li><a href="#about"
+                                    class="text-gray-300 hover:text-white transition">About
+                                    Us</a></li>
+                            <li><a href="#projects"
+                                    class="text-gray-300 hover:text-white transition">Projects</a></li>
+                            <li><a href="#amenities"
+                                    class="text-gray-300 hover:text-white transition">Amenities</a></li>
+                            <li><a href="#contact"
+                                    class="text-gray-300 hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#"
+                                    class="text-gray-300 hover:text-white transition">Privacy
+                                    Policy</a></li>
+                            <li><a href="#"
+                                    class="text-gray-300 hover:text-white transition">Terms
+                                    of Service</a></li>
+                            <li><a href="#"
+                                    class="text-gray-300 hover:text-white transition">Cookie
+                                    Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                        <p class="text-gray-300 mb-4">
+                            Subscribe to our newsletter for the latest updates
+                            and offers.
+                        </p>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email"
+                                class="px-4 py-2 rounded-l text-gray-800 w-full focus:outline-none">
+                            <button class="coral-bg px-4 rounded-r">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                    <p>&copy; 2023 Skypher Landmarks. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
         // Mobile menu toggle
         // Mobile menu toggle
         const toggleButton = document.querySelector('button.md\\:hidden');
@@ -537,7 +675,7 @@
         
     </script>
 
-<script>
+        <script>
   const slides = document.querySelectorAll('.hero-slide');
   let current = 0;
 
@@ -565,7 +703,7 @@
   showSlide(current);
 </script>
 
-<script>
+        <script>
   const projects = [
   {
       title: "Skyi Manas Lake",
@@ -655,7 +793,7 @@
     containerOngoing.appendChild(card);
   });
 </script>
-<script>
+        <script>
     // Add active class on nav link click
     const navLinks = document.querySelectorAll('.nav-link');
   
@@ -666,7 +804,6 @@
       });
     });
   </script>
-  
 
-</body>
+    </body>
 </html>
