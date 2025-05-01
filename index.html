@@ -390,7 +390,7 @@
                     </p>
                     <div class="flex">
                         <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l text-gray-800 w-full focus:outline-none">
-                        <button class="coral-bg px-4 rounded-r">
+                        <button class="coral-bg px-4 rounded-r" onclick="newsletter()">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </div>
@@ -524,6 +524,32 @@
     containerOngoing.appendChild(card);
   });
 </script>
+<script>
+   function newsletter(){
+    const email = document.querySelector('input[type="email"]').value;
+  
+      if (!email || !email.includes("@")) {
+        alert("Please enter a valid email.");
+        return;
+      }
+  
+      fetch('php/subscribe.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: 'email=' + encodeURIComponent(email)
+      })
+      .then(response => response.text())
+      .then(result => {
+        alert(result);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+   }
+  </script>
+  
 
 <script src="assets/js/sky.js"></script>
 
