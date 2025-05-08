@@ -13,6 +13,36 @@
             rel="stylesheet">
         <link rel="stylesheet" href="assets/css/sky.css">
 
+        <!-- SEO Meta Tags -->
+        <meta name="description"
+            content="Skypher Landmarks is a premier real estate developer in Pune, crafting iconic skylines with quality, innovation, and customer satisfaction for over 20 years.">
+        <meta name="keywords"
+            content="Skypher, Real Estate, Pune, Landmarks, Apartments, Projects, Luxury, Construction, Developer, Ongoing Projects, Completed Projects, Gated Community, Amenities, Buy Home, Invest, India">
+        <meta name="author" content="Skypher Landmarks">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#1F2E4E">
+
+        <!-- Open Graph / Facebook / WhatsApp -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://skypher.in/">
+        <meta property="og:title"
+            content="Skypher Landmarks | Crafting Iconic Skylines">
+        <meta property="og:description"
+            content="Skypher Landmarks is a premier real estate developer in Pune, crafting iconic skylines with quality, innovation, and customer satisfaction for over 20 years.">
+        <meta property="og:image"
+            content="assets/images/skypher logo white.png">
+
+        <!-- Twitter -->
+        <meta name="twitter:card"
+            content="assets/images/skypher logo white.png">
+        <meta name="twitter:url" content="https://skypher.in/">
+        <meta name="twitter:title"
+            content="Skypher Landmarks | Crafting Iconic Skylines">
+        <meta name="twitter:description"
+            content="Skypher Landmarks is a premier real estate developer in Pune, crafting iconic skylines with quality, innovation, and customer satisfaction for over 20 years.">
+        <meta name="twitter:image"
+            content="assets/images/skypher logo white.png">
+
     </head>
     <body class="text-gray-800">
         <!-- Navigation -->
@@ -504,7 +534,7 @@
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Legal</h4>
                         <ul class="space-y-2">
-                            <li><a href="#"
+                            <li><a href="privacy-policy.html"
                                     class="text-gray-300 hover:text-white transition">Privacy
                                     Policy</a></li>
                             <li><a href="#"
@@ -525,7 +555,8 @@
                         <div class="flex">
                             <input type="email" placeholder="Your email"
                                 class="px-4 py-2 rounded-l text-gray-800 w-full focus:outline-none">
-                            <button class="coral-bg px-4 rounded-r">
+                            <button class="coral-bg px-4 rounded-r"
+                                onclick="newsletter()">
                                 <i class="fas fa-paper-plane"></i>
                             </button>
                         </div>
@@ -613,7 +644,7 @@
   {
       title: "Indira",
       location: "Patwardhan Baug",
-      description: "Patwardhan Baug, Near Dr. Shyamaprasad Mukherjee Garden, Erandwane, Pune 411004",
+      description: "Patwardhan Baug, Near Dr. Shyamaprasad Mukherjee Garden, Erandwane, Pune 411004",
       image: "assets/images/ongoing/indira.jpg"
     },
     {
@@ -659,6 +690,31 @@
     containerOngoing.appendChild(card);
   });
 </script>
+        <script>
+   function newsletter(){
+    const email = document.querySelector('input[type="email"]').value;
+  
+      if (!email || !email.includes("@")) {
+        alert("Please enter a valid email.");
+        return;
+      }
+  
+      fetch('php/subscribe.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: 'email=' + encodeURIComponent(email)
+      })
+      .then(response => response.text())
+      .then(result => {
+        alert(result);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+   }
+  </script>
 
         <script src="assets/js/sky.js"></script>
 
