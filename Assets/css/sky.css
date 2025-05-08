@@ -1,88 +1,78 @@
+
 :root {
-    --sky-primary: #152549;
-    --sky-secondary: #f1ead7;
-    --sky-white: #f8f8f8;
-    --sky-red: #dc5957;
+    --navy: #1F2E4E;
+    --coral: #D95C4B;
+    --cream: #EFE8D8;
 }
 
-@font-face {
-    font-family: skyfontr;
-    src: url(../fonts/gotham/Gotham-Light.otf);
-}
-  
-  @font-face {
-    font-family: skyheaderfont;
-    src: url(../fonts/crimson/Crimson-Bold.otf);
-  }
-
-  body {
-    font-family: skyfontr !important;
-    background-color: white;
-    align-content: center;
-  }
-
-  h2 {
-    font-family: skyheaderfont !important;
- }
-
- .sky-bg-primary{
-  background-color: var(--sky-primary);
- }
-
- .sky-bg-secondary{
-  background-color: var(--sky-secondary);
- }
-
- .sky-bg-white{
-  background-color: var(--sky-white);
- }
-
- .sky-bg-red{
-  background-color: var(--sky-red);
- }
-
- .sky-text-primary{
-  color: var(--sky-primary);
- }
-
- .stats-section{
-  min-height: 250px;
- }
-
- /* image css */
-
-/* Container for the image */
-.image-container {
-  position: relative;
-  overflow: hidden; /* Ensures the image doesn't overflow the container */
-  border-radius: 8px; /* Optional: Add rounded corners */
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
-/* Image styles */
-.zoom-image {
-  width: 100%; /* Ensure the image fills the container */
-  height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and crop to fit */
-  transition: transform 0.5s ease; /* Smooth zoom transition */
+.navy-bg {
+    background-color: var(--navy);
 }
 
-/* Hover effect */
-.image-container:hover .zoom-image {
-  transform: scale(1.1); /* Zoom the image by 20% */
+.coral-bg {
+    background-color: var(--coral);
 }
 
-
-/* slider img css */
-
-.slider-img-item{
-  max-height: 550px;
-  width: 100%;
-  object-fit: cover;
+.cream-bg {
+    background-color: var(--cream);
 }
 
+.navy-text {
+    color: var(--navy);
+}
 
-.hidden {
-  opacity: 0; /* Make it invisible */
-  visibility: hidden; /* Prevent interaction */
-  transition: opacity 0.3s ease-out;
+.coral-text {
+    color: var(--coral);
+}
+
+.cream-text {
+    color: var(--cream);
+}
+
+.hero {
+    background: linear-gradient(to right, white 50%, rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.amenity-icon {
+    transition: all 0.3s ease;
+}
+
+.amenity-icon:hover {
+    transform: scale(1.1);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.hero-slide {
+opacity: 0;
+transition: opacity 1s ease-in-out;
+z-index: 0;
+}
+.hero-slide.active {
+opacity: 1;
+z-index: 1;
+}
+
+.nav-link.active {
+border-bottom: 2px solid var(--coral);
+color: var(--coral);
 }
